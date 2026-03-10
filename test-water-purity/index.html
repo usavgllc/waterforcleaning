@@ -54,7 +54,7 @@ img{max-width:100%;height:auto;display:block}
 .hero-mini{padding:140px 24px 60px;background:var(--primary-light);text-align:center;position:relative;overflow:hidden}
 .hero-mini h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:16px;position:relative;z-index:1}
 .breadcrumb{display:flex;justify-content:center;gap:8px;font-size:0.85rem;color:var(--text-muted);margin-bottom:24px;position:relative;z-index:1}
-.breadcrumb a{color:var(--text-muted)}
+.breadcrumb a{color:#8899aa;text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:#fff}.breadcrumb .bc-cat{color:#8899aa}.breadcrumb .bc-current{color:#fff;font-weight:600}
 .breadcrumb a:hover{color:var(--accent)}
 .content-section{overflow:hidden;padding:80px 24px;max-width:900px;margin:0 auto}
 .content-grid{display:grid;gap:60px;overflow:hidden}
@@ -136,6 +136,7 @@ img{max-width:100%;height:auto;display:block}
 <a href="/rv-camper-cleaning/">RV & Camper</a>
 <a href="/commercial-kitchen/">Commercial Kitchen</a>
 <a href="/hydroponic-greenhouse/">Hydroponics</a>
+<div style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px"><a href="../industries/">View All Industries →</a></div>
 </div>
 </li>
 <li class="nav-dropdown">
@@ -152,6 +153,7 @@ img{max-width:100%;height:auto;display:block}
 <a href="/painting-coating-prep/">Painting & Coating</a>
 <a href="/medical-dental-cleaning/">Medical & Dental</a>
 <a href="/electronics-cleaning/">Electronics</a>
+<div style="border-top:1px solid var(--border);margin-top:4px;padding-top:4px"><a href="../specialty/">View All Specialty →</a></div>
 </div>
 </li>
 <li class="nav-dropdown">
@@ -228,9 +230,7 @@ img{max-width:100%;height:auto;display:block}
 
 <header class="hero-mini">
 <div class="container">
-<div class="breadcrumb">
-<a href="/">Home</a> <span>/</span> <span>Guides</span> <span>/</span> <span>Test Water Purity</span>
-</div>
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a><span>&rsaquo;</span><a href="../resources/">Guides</a><span>&rsaquo;</span><span class="bc-current">Test Water Purity</span></nav>
 <h1>How to Test Water Purity for Cleaning</h1>
 <p>Ensure spot-free results by verifying your water quality before you start.</p>
 </div>
